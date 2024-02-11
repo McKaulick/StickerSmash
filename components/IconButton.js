@@ -3,9 +3,9 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 export default function IconButton({ icon, label, onPress }) {
     return (
-        <Pressable style={StyleSheet.IconButton} onPress={onPress}>
+        <Pressable style={styles.IconButton} onPress={onPress}>
             <MaterialIcons name={icon} size={24} color="#fff" />
-            <Text style={StyleSheet.iconButtonLabel}>{label}</Text>
+            <Text style={styles.iconButtonLabel}>{label}</Text>
         </Pressable>
     );
 }
